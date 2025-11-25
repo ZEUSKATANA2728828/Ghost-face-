@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial;
+    background: var(--bg);
+    color: var(--txt);
+}
+
+:root {
+    --bg: #000;
+    --txt: #fff;
+    --box: #111;
+}
+
+.light {
+    --bg: #eee;
+    --txt: #000;
+    --box: #ddd;
+}
+
+.container, .menu, .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--box);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    margin: 8px;
+    background: #159f00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.theme-btn {
+    background: #005ed1;
+}
+
+#particles, #nebula {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.hidden {
+    display: none;
+}
